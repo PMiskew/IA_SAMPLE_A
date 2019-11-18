@@ -4,15 +4,21 @@ public class Controller {
 
 	
 	//GUI CLASSES
-	WindowA mainWindow = new WindowA();
-	WindowB winB = new WindowB();
+	WindowA mainWindow = new WindowA(this);
+	WindowB winB = new WindowB(this);
 	
 	//DATA CLASSES
 	ArrayList<Student> students = new ArrayList<Student>();
 	
 	public Controller() {
 		
+		
+		//The controllor has not window its managing stuff. 
+		
 		//LOAD ALL STUDENTS INTO list student
+	
+		
+		//LOAD any active students 
 	}
 	
 	public static void main(String[] args) {
@@ -22,7 +28,7 @@ public class Controller {
 	
 	public void activateWindow(int a) {
 		
-		#set all to false
+		//set all to false
 		mainWindow.setVisible(false);
 		winB.setVisible(false);
 		
